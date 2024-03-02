@@ -1,0 +1,33 @@
+graph {
+	graph [rankdir=TB]
+	{
+		rank=same
+		00 [fillcolor=white shape=square style=filled]
+		01 [fillcolor=white shape=square style=filled]
+		02 [fillcolor=white shape=square style=filled]
+	}
+	{
+		rank=same
+		10 [fillcolor=white shape=square style=filled]
+		11 [fillcolor=black shape=square style=filled]
+		12 [fillcolor=white shape=square style=filled]
+	}
+	{
+		rank=same
+		20 [fillcolor=white shape=square style=filled]
+		21 [fillcolor=white shape=square style=filled]
+		22 [fillcolor=black shape=square style=filled]
+	}
+	00 -- 01
+	00 -- 10
+	01 -- 02
+	01 -- 11
+	02 -- 12
+	10 -- 11
+	10 -- 20
+	11 -- 12
+	11 -- 21
+	12 -- 22
+	20 -- 21
+	21 -- 22
+}
